@@ -18,8 +18,7 @@
     "demo:build": "rimraf demo/dist && webpack --config demo/webpack.config.js -p",
     "demo:deploy": "gh-pages -d demo/dist",
     "deploy": "gh-pages -d demo:build",
-    "postpublish": "npm run deploy",
-    "postinstall": "npm run build:main"
+    "postpublish": "npm run deploy"
   },
   "repository": {
     "type": "git",
@@ -41,6 +40,11 @@
     "longitude",
     "geocode",
     "geocoder"
+  ],
+  "files": [
+    "dist",
+    "src",
+    "README.md"
   ],
   "author": "Ken Hibino <ken.hibino7@gmail.com> (http://www.kenhibino.com/)",
   "license": "MIT",
